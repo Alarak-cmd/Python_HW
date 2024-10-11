@@ -1,7 +1,7 @@
 st = input()
 leng = 0
 p = 1
-st = st.replace('h', '!')
+st = st.replace('н', '!')
 for i in range(len(st) - 1):
     if st[i] == st[i + 1]:
         p += 1
