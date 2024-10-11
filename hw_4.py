@@ -1,13 +1,13 @@
 st = input()
 leng = 0
 p = 1
-st = st.replace('н', '!')
 for i in range(len(st) - 1):
-    if st[i] == st[i + 1]:
+    if st[i] == st[i + 1] and st[i] == 'н':
         p += 1
         leng = max(leng, p)
     else:
         p = 1
+st = st.replace('н', '!')
 print(leng, st)
 
 st = input()
